@@ -20,6 +20,10 @@ h1, h2, h3 {
     margin: 0;
     font-weight: 400;
 
+    &.hidden {
+        opacity: 0.3;
+    }
+
     &.lg-heading {
         font-size: 5rem;
         margin-bottom: 0rem;
