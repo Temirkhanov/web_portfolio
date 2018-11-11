@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -92,7 +92,7 @@
             background-image: url('../img/port.jpg');
             border-radius: 50%;
             border: solid 3px $color2;
-            background-size: 13rem;
+            background-size: 15rem;
             background-position: 50% 20%;
         }
     }
@@ -118,7 +118,7 @@
         text-transorm: uppercase;
         padding: 0.5rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
