@@ -2,8 +2,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 4rem;
-  top: 3rem;
+  right: 35px;
+  top: 35px;
   cursor: pointer;
   @include easeOut;
 
@@ -40,7 +40,6 @@
 // Menu Overlay
 .menu {
   position: fixed;
-  left: 70%;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -50,36 +49,51 @@
     visibility: visible;
   }
 
-  &.portrait {
-    width: 15rem;
-    height: 15rem;
-    background-image: url("../img/port.jpg");
-    border-radius: 50%;
-    border: solid 3px $color2;
-    background-size: 15rem;
-    background-position: 50% 20%;
-    @include easeOut;
-  }
-
+  &-branding,
   &-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     float: left;
-    width: 30%;
+    width: 50%;
     height: 100vh;
     overflow: hidden;
+  }
+
+  &-nav {
     margin: 0;
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
       // slide in from top
       transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //Branding Side
+  &-branding {
+    background: $primary-color;
+    @include easeOut;
+    transform: translate3d(0, 100%, 0);
+
+    &.show {
+      // slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 15rem;
+      height: 15rem;
+      background-image: url("../img/port.jpg");
+      border-radius: 50%;
+      border: solid 3px $color2;
+      background-size: 15rem;
+      background-position: 50% 20%;
     }
   }
 
