@@ -1,82 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>About Me</title>
-</head>
-<body>
-
+  </head>
+  <body id="bg-img">
     <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
 
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="about.html" class="nav-link">
-                        About Me
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">
-                        My Work
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link"> About Me </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> My Work </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main id="about">
-        <h1 class="lg-heading home-text">
-            About
-            <span class="text-secondary home-text">Me</span>
-        </h1>
-        <h2 class="sm-heading home-text">
-            Let me tell you a few things...
-        </h2>
-        <div class="about-info">
-            <img src="img/port.jpg" alt="Ruslan Temirkhanov" class="bio-image">
+      <div class="about-info">
+        <img src="img/port.jpg" alt="Ruslan Temirkhanov" class="bio-image" />
 
-            <div class="bio">
-                <h3 class="text-secondary">BIO</h3>
-                <p class="my-intro">
-                    Soon to be edited...
-                </p> 
-            </div>
-            <div class="skill skill1">
-                <h3 class="skill-heading">C++, Java, Python</h3>
-                <p class="skill-paragraph">Ongoing Construction</p>    
-            </div>
-            <div class="skill skill2">
-                    <h3 class="skill-heading">HTML, CSS, JavaScript</h3>
-                    <p class="skill-paragraph">Ongoing Construction</p>    
-                </div>
-                <div class="skill skill3">
-                        <h3 class="skill-heading">Something Else</h3>
-                        <p class="skill-paragraph">Ongoing Construction</p>    
-                    </div>
+        <div class="bio">
+          <h3 class="text-secondary bio-heading">Why Computer Science?</h3>
+
+          <p class="my-intro">
+            I fell in love with the world of computers from a very early age,
+            because of my passion for mathematics and learning new things. Once
+            I got to college, I began studying Computer Science and developed
+            new passion for programming. I loves puzzles and programming is
+            pretty much puzzle-solving paired with creating something new, being
+            creative. I like the satisfaction I get from watching the computer
+            in live do things that I pre-determined it.
+          </p>
         </div>
+        <div class="skill skill1">
+          <h3 class="skill-heading">Some of my favorite college courses:</h3>
+          <ul class="skill-paragraph">
+            <li>Design and Analysis of Algorithms.</li>
+            <li>Database Systems.</li>
+            <li>Data Structures.</li>
+            <li>Distributed Systems.</li>
+          </ul>
+        </div>
+        <div class="skill skill2">
+          <h3 class="skill-heading">Programming skills:</h3>
+          <dl class="skill-paragraph">
+            <dt>Advanced:</dt>
+            <dd>C++, Java</dd>
+            <dt>Intermidiate:</dt>
+            <dd>SQL, JavaScript, HTML, CSS.</dd>
+          </dl>
+        </div>
+        <div class="skill skill3">
+          <h3 class="skill-heading">Currently learning/exploring</h3>
+          <ul class="skill-paragraph">
+            <li>Web Development.</li>
+            <li>Python.</li>
+            <li>Django Web Framework.</li>
+            <li>Algorithms.</li>
+          </ul>
+        </div>
+      </div>
     </main>
 
-    <footer id="main-footer">
-        Copyright &copy; 2018
-    </footer>
+    <footer id="main-footer">Copyright &copy; 2018</footer>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

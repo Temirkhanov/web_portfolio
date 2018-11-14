@@ -40,25 +40,13 @@
 // Menu Overlay
 .menu {
   position: fixed;
-  left: 70%;
+  left: 80%;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
     visibility: visible;
-  }
-
-  &.portrait {
-    width: 15rem;
-    height: 15rem;
-    background-image: url("../img/port.jpg");
-    border-radius: 50%;
-    border: solid 3px $color2;
-    background-size: 15rem;
-    background-position: 50% 20%;
-    @include easeOut;
   }
 
   &-nav {
@@ -67,12 +55,12 @@
     align-items: center;
     justify-content: center;
     float: left;
-    width: 30%;
+    width: 20%;
     height: 100vh;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: rgba(68, 68, 68, 0.6);
     list-style: none;
     transform: translate3d(100%, 0, 0);
     @include easeOut;

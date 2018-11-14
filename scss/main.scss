@@ -16,7 +16,6 @@ body {
 }
 
 // Headings
-
 h1,
 h2,
 h3 {
@@ -36,6 +35,12 @@ h3 {
     font-size: 2rem;
     margin-bottom: 0.2rem;
     padding: 0.2rem 0.5rem;
+  }
+
+  &.lg-heading2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 }
 
@@ -59,16 +64,6 @@ main {
   height: 100%;
   min-height: calc(100vh - 40px);
 
-  .portrait {
-    width: 15rem;
-    height: 15rem;
-    background-image: url("../img/port.jpg");
-    border-radius: 50%;
-    border: solid 3px $color2;
-    background-size: 15rem;
-    background-position: 50% 20%;
-  }
-
   .icons {
     margin-top: 0.5rem;
 
@@ -91,6 +86,7 @@ main {
 }
 
 .about-info {
+  margin-top: 10vh;
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
@@ -108,8 +104,15 @@ main {
   }
 
   .bio {
+    background-color: rgba(68, 68, 68, 0.4);
+    padding: 1rem;
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: $color2 5px solid;
+  }
+
+  .bio-heading {
+    font-size: 2rem;
   }
 
   .skill1 {
@@ -125,9 +128,14 @@ main {
   }
 
   .skill {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
+    background: rgba(68, 68, 68, 0.4);
+    padding: 0.7rem;
     border-bottom: $color2 5px solid;
+  }
+
+  .skill-heading {
+    color: $color2;
+    font-size: 1.5rem;
   }
 }
 
@@ -135,7 +143,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.6rem;
+  grid-gap: 1rem;
 
   img {
     width: 100%;
@@ -176,7 +184,6 @@ main {
 #main-footer {
   text-align: center;
   padding: 0.6rem;
-  background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 40px;
 }

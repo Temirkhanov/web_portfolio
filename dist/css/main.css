@@ -22,34 +22,24 @@
 
 .menu {
   position: fixed;
-  left: 70%;
+  left: 80%;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
-  .menu.portrait {
-    width: 15rem;
-    height: 15rem;
-    background-image: url("../img/port.jpg");
-    border-radius: 50%;
-    border: solid 3px #f4a460;
-    background-size: 15rem;
-    background-position: 50% 20%;
-    transition: all 0.5s ease-out; }
   .menu-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     float: left;
-    width: 30%;
+    width: 20%;
     height: 100vh;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(68, 68, 68, 0.6);
     list-style: none;
     transform: translate3d(100%, 0, 0);
     transition: all 0.5s ease-out; }
@@ -61,7 +51,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #f4a460; }
+      color: #e2b82f; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -73,7 +63,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #f4a460; }
+      color: #e2b82f; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -109,7 +99,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.5); }
+      background: rgba(68, 68, 68, 0.2); }
 
 h1,
 h2,
@@ -131,6 +121,12 @@ h3 {
     font-size: 2rem;
     margin-bottom: 0.2rem;
     padding: 0.2rem 0.5rem; }
+  h1.lg-heading2,
+  h2.lg-heading2,
+  h3.lg-heading2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center; }
 
 a {
   color: #fff;
@@ -142,26 +138,18 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #f4a460; }
+  color: #e2b82f; }
 
 main {
   padding: 3rem;
   height: 100%;
   min-height: calc(100vh - 40px); }
-  main .portrait {
-    width: 15rem;
-    height: 15rem;
-    background-image: url("../img/port.jpg");
-    border-radius: 50%;
-    border: solid 3px #f4a460;
-    background-size: 15rem;
-    background-position: 50% 20%; }
   main .icons {
     margin-top: 0.5rem; }
     main .icons a {
       padding: 0.2rem; }
       main .icons a:hover {
-        color: #f4a460;
+        color: #e2b82f;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -169,6 +157,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  margin-top: 10vh;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bioimage bio bio" "skill1 skill2 skill3";
@@ -177,12 +166,17 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #f4a460 3px solid;
+    border: #e2b82f 3px solid;
     width: 15rem;
     height: 15rem; }
   .about-info .bio {
+    background-color: rgba(68, 68, 68, 0.4);
+    padding: 1rem;
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.2rem;
+    border-bottom: #e2b82f 5px solid; }
+  .about-info .bio-heading {
+    font-size: 2rem; }
   .about-info .skill1 {
     grid-area: skill1; }
   .about-info .skill2 {
@@ -190,20 +184,23 @@ main {
   .about-info .skill3 {
     grid-area: skill3; }
   .about-info .skill {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #f4a460 5px solid; }
+    background: rgba(68, 68, 68, 0.4);
+    padding: 0.7rem;
+    border-bottom: #e2b82f 5px solid; }
+  .about-info .skill-heading {
+    color: #e2b82f;
+    font-size: 1.5rem; }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.6rem; }
+  grid-gap: 1rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #f4a460;
+      border-color: #e2b82f;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -212,7 +209,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #f4a460;
+    background: #e2b82f;
     color: #000; }
 
 .btn-dark {
@@ -226,7 +223,6 @@ main {
 #main-footer {
   text-align: center;
   padding: 0.6rem;
-  background: #2b2b2b;
   color: #fff;
   height: 40px; }
 
