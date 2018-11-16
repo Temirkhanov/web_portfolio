@@ -142,12 +142,15 @@ main {
 // Work/Projects
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+  text-align: center;
 
   img {
     width: 100%;
-    border: 3px #fff solid;
+    border-top: 0.1rem black solid;
+    border-right: 0.1rem black solid;
+    border-left: 0.1rem black solid;
 
     &:hover {
       opacity: 0.5;
@@ -155,13 +158,28 @@ main {
       @include easeOut;
     }
   }
+
+  .project-lang {
+    padding: 0.1rem 0.2rem;
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    border-top: 0.1rem black solid;
+    border-right: 0.1rem black solid;
+    border-left: 0.1rem black solid;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.6);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
 }
 
 // Button Styles
 .btn {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border: 0;
+  text-align: center;
   margin-bottom: 0.3rem;
   &:hover {
     background: $color2;
