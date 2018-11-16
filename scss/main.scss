@@ -148,9 +148,7 @@ main {
 
   img {
     width: 100%;
-    border-top: 0.1rem black solid;
-    border-right: 0.1rem black solid;
-    border-left: 0.1rem black solid;
+    border: 0.1rem black solid;
 
     &:hover {
       opacity: 0.5;
@@ -164,9 +162,7 @@ main {
     display: inline-block;
     width: 100%;
     font-size: 1rem;
-    border-top: 0.1rem black solid;
-    border-right: 0.1rem black solid;
-    border-left: 0.1rem black solid;
+    border: 0.1rem black solid;
     text-align: center;
     background: rgba(68, 68, 68, 0.6);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
